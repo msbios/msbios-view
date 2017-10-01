@@ -18,10 +18,6 @@ return [
         'aliases' => [
             // Override
             'Zend\View\Renderer\PhpRenderer' =>
-                Renderer\PhpRenderer::class,
-            'ViewPhpRenderer' =>
-                Renderer\PhpRenderer::class,
-            'ViewRenderer' =>
                 Renderer\PhpRenderer::class
         ]
     ],

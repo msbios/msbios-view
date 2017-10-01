@@ -34,5 +34,4 @@ class PhpRendererFactory extends ViewPhpRendererFactory
 
         return $renderer;
     }
-
 }

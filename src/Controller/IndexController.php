@@ -26,5 +26,4 @@ class IndexController extends AbstractActionController
         $viewModel->attachJavascript(true);
         return $viewModel;
     }
-
 }

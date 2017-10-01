@@ -34,6 +34,4 @@ class ViewModel extends DefaultViewModel implements ViewModelInterface
         $this->hasjs = $toggle;
         return $this;
     }
-
-
 }
