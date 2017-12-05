@@ -28,10 +28,14 @@ return [
 
     'view_helpers' => [
         'factories' => [
-            Helper\ToggleHelper::class => InvokableFactory::class
+            Helper\ToggleHelper::class =>
+                InvokableFactory::class,
+            Helper\TruncateHelper::class =>
+                InvokableFactory::class
         ],
         'aliases' => [
-            'toggle' => Helper\ToggleHelper::class
+            'toggle' => Helper\ToggleHelper::class,
+            'truncate' => Helper\TruncateHelper::class
         ]
     ],
 
