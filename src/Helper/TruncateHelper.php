@@ -22,9 +22,6 @@ use Zend\View\Helper\AbstractHelper;
  */
 class TruncateHelper extends AbstractHelper
 {
-
-    const PATTERN_EMPTY_ELEMENT = ;
-
     /**
      * @param $text
      * @param int $length
