@@ -19,7 +19,8 @@ class Module implements
     ModuleInterface,
     AutoloaderProviderInterface
 {
-    const VERSION = '0.0.1';
+    /** @const VERSION */
+    const VERSION = '1.0.4';
 
     /**
      * @return mixed

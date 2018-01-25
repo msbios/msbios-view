@@ -8,6 +8,19 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
+        'Zend\Mvc\Plugin\FilePrg',
+        'Zend\Mvc\Plugin\FlashMessenger',
+        'Zend\Mvc\Plugin\Identity',
+        'Zend\Mvc\Plugin\Prg',
+        'MSBios\Assetic',
+        'MSBios\I18n',
+        'Zend\Log',
+        'Zend\Session',
+        'Zend\Form',
+        'Zend\InputFilter',
+        'Zend\Filter',
+        'Zend\Hydrator',
+        'Zend\Validator',
         'Zend\I18n',
         'Zend\Navigation',
         'Zend\Router',
