@@ -77,10 +77,10 @@ return [
         // the layout ("layout/layout"), error pages ("error/index"), and
         // 404 page ("error/404"), resolving them to view scripts.
         'template_map' => [
-            'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
-            'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
-            'error/404' => __DIR__ . '/../view/error/404.phtml',
-            'error/index' => __DIR__ . '/../view/error/index.phtml',
+            // 'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
+            // 'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
+            // 'error/404' => __DIR__ . '/../view/error/404.phtml',
+            // 'error/index' => __DIR__ . '/../view/error/index.phtml',
         ],
 
         // The TemplatePathStack takes an array of directories. Directories
