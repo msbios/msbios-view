@@ -6,19 +6,23 @@
 
 namespace MSBios\View\Controller;
 
+use Laminas\Mvc\Controller\AbstractActionController;
+use Laminas\View\Model\ModelInterface;
 use MSBios\View\Model\ViewModel;
-use Zend\Mvc\Controller\AbstractActionController;
 
 /**
  * Class IndexController
+ *
  * @package MSBios\View\Controller
  */
 class IndexController extends AbstractActionController
 {
     /**
-     * @return ViewModel
+     * @inheritDoc
+     *
+     * @return ModelInterface
      */
-    public function indexAction()
+    public function indexAction(): ModelInterface
     {
         $viewModel = new ViewModel([
             'content' => 'Placeholder page'

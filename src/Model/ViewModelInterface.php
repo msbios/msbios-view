@@ -8,6 +8,7 @@ namespace MSBios\View\Model;
 
 /**
  * Interface ViewModelInterface
+ *
  * @package MSBios\View\Model
  */
 interface ViewModelInterface

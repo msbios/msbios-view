@@ -6,10 +6,11 @@
 
 namespace MSBios\View\Model;
 
-use Zend\View\Model\ViewModel as DefaultViewModel;
+use Laminas\View\Model\ViewModel as DefaultViewModel;
 
 /**
  * Class ViewModel
+ *
  * @package MSBios\View\Model
  */
 class ViewModel extends DefaultViewModel implements ViewModelInterface

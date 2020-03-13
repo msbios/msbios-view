@@ -6,15 +6,18 @@
 
 namespace MSBios\View\Helper;
 
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 /**
  * Class ToggleHelper
+ *
  * @package MSBios\View\Helper
  */
 class ToggleHelper extends AbstractHelper
 {
     /**
+     * @inheritDoc
+     *
      * @param $defaultValue
      * @param $dynamicValue
      * @param bool $successValue

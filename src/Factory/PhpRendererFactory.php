@@ -6,9 +6,11 @@
 namespace MSBios\View\Factory;
 
 use Interop\Container\ContainerInterface;
+use Laminas\Mvc\Service\ViewPhpRendererFactory;
+use Laminas\View\Renderer\RendererInterface;
 use MSBios\View\Renderer\PhpRenderer;
-use Zend\Mvc\Service\ViewPhpRendererFactory;
-use Zend\View\Renderer\RendererInterface;
+// use Zend\Mvc\Service\ViewPhpRendererFactory;
+// use Zend\View\Renderer\RendererInterface;
 
 /**
  * Class PhpRendererFactory

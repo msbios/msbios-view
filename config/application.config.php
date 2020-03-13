@@ -8,28 +8,28 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'MSBios\Application',
-        'Zend\Mvc\Plugin\FilePrg',
-        'Zend\Mvc\Plugin\FlashMessenger',
-        'Zend\Mvc\Plugin\Identity',
-        'Zend\Mvc\Plugin\Prg',
+        'Laminas\Serializer',
+        'Laminas\Mvc\Plugin\FilePrg',
+        'Laminas\Form',
+        'Laminas\Hydrator',
+        'Laminas\InputFilter',
+        'Laminas\Filter',
+        'Laminas\Mvc\Plugin\FlashMessenger',
+        'Laminas\Mvc\Plugin\Identity',
+        'Laminas\Mvc\Plugin\Prg',
+        'Laminas\Session',
+        'Laminas\Router',
+        'Laminas\Validator',
+        'Laminas\Cache',
+
         'MSBios\Theme',
         'MSBios\Assetic',
         'MSBios\I18n',
-        'Zend\I18n',
         'MSBios\Navigation',
-        'Zend\Navigation',
-        'Zend\Log',
-        'Zend\Session',
-        'Zend\Form',
-        'Zend\InputFilter',
-        'Zend\Filter',
-        'Zend\Hydrator',
-        'Zend\Router',
-        'Zend\Validator',
         'MSBios\Widget',
         'MSBios\View',
-        'ZendDeveloperTools'
+
+        'Laminas\DeveloperTools',
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => [

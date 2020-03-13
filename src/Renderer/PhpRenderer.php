@@ -5,26 +5,32 @@
  */
 namespace MSBios\View\Renderer;
 
+use Laminas\View\Helper\HelperInterface;
+use Laminas\View\Helper\InlineScript;
+use Laminas\View\Model\ModelInterface;
+use Laminas\View\Renderer\PhpRenderer as DefaultPhpRenderer;
 use MSBios\View\Model\ViewModelInterface;
-use Zend\View\Helper\InlineScript;
-use Zend\View\Renderer\PhpRenderer as DefaultPhpRenderer;
 
 /**
  * Class PhpRenderer
+ *
  * @package MSBios\View\Renderer
  */
 class PhpRenderer extends DefaultPhpRenderer
 {
     /**
-     * @param string|\Zend\View\Model\ModelInterface $nameOrModel
+     * @inheritDoc
+     *
+     * @param ModelInterface|string $nameOrModel
      * @param null $values
      * @return string
      */
-    public function render($nameOrModel, $values = null)
+    public function render($nameOrModel, $values = null): string
     {
         if ($nameOrModel instanceof ViewModelInterface && $nameOrModel->hasJavascript()) {
-            /** @var InlineScript $plugin */
+            /** @var HelperInterface|InlineScript $plugin */
             $plugin = $this->plugin('InlineScript');
+
             $plugin->captureStart();
             echo parent::render(
                 $nameOrModel->getTemplate() . '.pjs',

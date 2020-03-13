@@ -6,7 +6,7 @@
 
 namespace MSBios\View\Helper;
 
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 /**
  * Class TruncateHelper
@@ -23,6 +23,8 @@ use Zend\View\Helper\AbstractHelper;
 class TruncateHelper extends AbstractHelper
 {
     /**
+     * @inheritDoc
+     *
      * @param $text
      * @param int $length
      * @param string $ending
@@ -30,7 +32,7 @@ class TruncateHelper extends AbstractHelper
      * @param bool $considerHtml
      * @return string
      */
-    public function __invoke($text, $length = 100, $ending = '...', $exact = false, $considerHtml = true)
+    public function __invoke($text, $length = 100, $ending = '...', $exact = false, $considerHtml = true): string
     {
         if ($considerHtml) {
             // if the plain text is shorter than the maximum length, return the whole text
