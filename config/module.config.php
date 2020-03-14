@@ -6,8 +6,11 @@
 
 namespace MSBios\View;
 
-use Zend\ServiceManager\Factory\InvokableFactory;
-use Zend\View\Renderer\PhpRenderer;
+// use Zend\ServiceManager\Factory\InvokableFactory;
+// use Zend\View\Renderer\PhpRenderer;
+
+use Laminas\ServiceManager\Factory\InvokableFactory;
+use Laminas\View\Renderer\PhpRenderer;
 
 return [
 
@@ -109,9 +112,5 @@ return [
             'toggle' => Helper\ToggleHelper::class,
             'truncate' => Helper\TruncateHelper::class
         ]
-    ],
-
-    Module::class => [
-        // ...
     ],
 ];

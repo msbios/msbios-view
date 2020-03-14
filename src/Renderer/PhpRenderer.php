@@ -27,13 +27,13 @@ class PhpRenderer extends DefaultPhpRenderer
      */
     public function render($nameOrModel, $values = null): string
     {
-        if ($nameOrModel instanceof ViewModelInterface && $nameOrModel->hasJavascript()) {
+        if ($nameOrModel instanceof ViewModelInterface && $nameOrModel->isHasjs()) {
             /** @var HelperInterface|InlineScript $plugin */
             $plugin = $this->plugin('InlineScript');
 
             $plugin->captureStart();
             echo parent::render(
-                $nameOrModel->getTemplate() . '.pjs',
+                $nameOrModel->getTemplate() . '.pjs', // TODO: Need get this suffix from config
                 $nameOrModel->getVariables()
             );
             $plugin->captureEnd();

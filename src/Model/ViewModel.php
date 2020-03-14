@@ -21,18 +21,18 @@ class ViewModel extends DefaultViewModel implements ViewModelInterface
     /**
      * @return bool
      */
-    public function hasJavascript(): bool
+    public function isHasjs(): bool
     {
         return $this->hasjs;
     }
 
     /**
-     * @param bool $toggle
-     * @return $this
+     * @param bool $hasjs
+     * @return ViewModel
      */
-    public function attachJavascript(bool $toggle)
+    public function setHasjs(bool $hasjs): ViewModel
     {
-        $this->hasjs = $toggle;
+        $this->hasjs = $hasjs;
         return $this;
     }
 }

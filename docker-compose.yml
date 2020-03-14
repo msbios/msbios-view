@@ -4,6 +4,7 @@ services:
 
   # php-fpm
   php-fpm:
+    container_name: view-php-fpm
     build:
       context: .
       target: dev
@@ -12,10 +13,11 @@ services:
         APP_ENV: dev
     volumes:
       - .:/var/www/html:rw
-      - ~/.composer:/root/.composer/cache:ro
+      - ~/.composer:/root/.composer/cache
 
   # nginx
   nginx:
+    container_name: view-nginx
     build:
       context: .
       target: dev

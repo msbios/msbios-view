@@ -28,12 +28,7 @@
     "msbios/msbios": "^2.0"
   },
   "require-dev": {
-    "laminas/laminas-component-installer": "^1.0 || ^0.7 || ^1.0.0-dev@dev",
-    "laminas/laminas-mvc": "^3.1",
-    "laminas/laminas-mvc-plugins": "^1.0",
-    "laminas/laminas-router": "^3.3",
-    "laminas/laminas-cache": "^2.9",
-    "laminas/laminas-serializer": "^2.9",
+    "msbios/application": "^2.0",
     "msbios/debug": "^2.0",
     "msbios/test": "^2.0"
   },

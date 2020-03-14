@@ -8,7 +8,6 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'Laminas\Serializer',
         'Laminas\Mvc\Plugin\FilePrg',
         'Laminas\Form',
         'Laminas\Hydrator',
@@ -20,15 +19,9 @@ return [
         'Laminas\Session',
         'Laminas\Router',
         'Laminas\Validator',
-        'Laminas\Cache',
-
-        'MSBios\Theme',
-        'MSBios\Assetic',
-        'MSBios\I18n',
-        'MSBios\Navigation',
-        'MSBios\Widget',
+        'MSBios',
+        'MSBios\Application',
         'MSBios\View',
-
         'Laminas\DeveloperTools',
     ],
     // These are various options for the listeners attached to the ModuleManager

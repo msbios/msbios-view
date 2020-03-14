@@ -16,11 +16,11 @@ interface ViewModelInterface
     /**
      * @return bool
      */
-    public function hasJavascript(): bool;
+    public function isHasjs(): bool;
 
     /**
-     * @param bool $toggle
-     * @return $this
+     * @param bool $hasjs
+     * @return ViewModel
      */
-    public function attachJavascript(bool $toggle);
+    public function setHasjs(bool $hasjs): ViewModel;
 }

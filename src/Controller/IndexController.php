@@ -24,10 +24,8 @@ class IndexController extends AbstractActionController
      */
     public function indexAction(): ModelInterface
     {
-        $viewModel = new ViewModel([
-            'content' => 'Placeholder page'
-        ]);
-        $viewModel->attachJavascript(true);
-        return $viewModel;
+        return (new ViewModel([
+            'content' => 'Page with javascript code.'
+        ]))->setHasjs(true);
     }
 }
